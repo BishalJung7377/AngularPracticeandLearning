@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./base";
+@mixin cardstyle {
+    font-family: $font-family ;
+    margin-left: $marginleftright;
+    margin-right: $marginleftright;
+    margin-top: $margintopbottom;
+    margin-bottom:$margintopbottom;
+    border-radius: $padding;
+    background-color: $primarycolor;
+    
+}
+
+.card {
+    @include cardstyle;
+    width: 400px;
+    padding: 1.8rem;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+  }

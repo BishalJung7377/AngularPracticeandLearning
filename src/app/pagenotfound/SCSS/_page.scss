@@ -1,0 +1,11 @@
+@import "./variables";
+
+.page_404 {
+    padding: 40px 0;
+    background: backgroundcolor;
+    font-family: fontfamily;
+  }
+  
+  .page_404 img {
+    width: $width;
+  }

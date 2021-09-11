@@ -1,0 +1,29 @@
+<h1> Simple Registration Form</h1>
+
+
+<form  #simpleForm="ngForm" (ngSubmit)="getUserValue('simpleForm.value')">
+<input type="text" ngModel name="username" placeholder="Enter Username here" style="margin: 5px auto;" /> <br>
+<input type="text" ngModel  name="age" placeholder="Enter age here" style="margin: 5px auto;" /> <br>
+<input type="text" ngModel  name="address" placeholder="Enter addre here" style="margin: 5px auto;" /> <br>
+<br>
+<button style="margin: 20px auto;" class="button" >Register</button>
+</form>
+
+<h1>{{email}}</h1>
+
+<table border="2" style="width: 100%;">
+    <tr>
+        <td>ID</td>
+        <td>Email</td>
+        <td>Fname</td>
+        <td>Lname</td>
+
+    </tr>
+    <tr *ngFor= "let item of todouser">
+        <td>id</td>
+        <td>Email</td>
+        <td>Fname</td>
+        <td>Lname</td>
+    
+    </tr>
+</table>

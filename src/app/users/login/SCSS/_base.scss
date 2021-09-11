@@ -1,0 +1,51 @@
+@import "./variables";
+
+$border: 8px;
+$bordersolid: solid 2px;
+$marginleftright: auto;
+$margintopbottom: 3em;
+
+
+.social-login img {
+    width: 24px;
+  }
+  .title {
+    text-align: $textcontentitemalign;
+    font-weight: $fontweight;
+    margin: 0;
+  }
+  .subtitle {
+    text-align: $textcontentitemalign;
+    font-weight: $fontweight;
+  }
+  .btn-text {
+    margin: $margin;
+  }
+  
+  .social-login {
+    display: $display;
+    justify-content: $textcontentitemalign;
+    gap: $gap;
+  }
+  
+  .google-btn {
+    background: #fff;
+    border: $bordersolid rgb(245 239 239);
+    border-radius: 8px;
+    font-weight: $fontweight;
+    display: $display;
+    padding: $padding $padding;
+    flex: auto;
+    align-items: $textcontentitemalign;
+    gap: $gap;
+    justify-content: $textcontentitemalign;
+  }
+  .fb-btn {
+    background: #fff;
+    border: $bordersolid rgb(69, 69, 185);
+    border-radius: $border;
+    padding: $padding;
+    display: flex;
+    align-items: $textcontentitemalign;
+  }
+  

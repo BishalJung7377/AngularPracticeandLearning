@@ -1,0 +1,50 @@
+@import "./variables";
+@import "./base";
+
+
+.or {
+    text-align: $textcontentitemalign;
+    font-weight: $fontweight;
+    border-bottom: $bordersolid rgb(245 239 239);
+    line-height: 0.1em;
+    margin: 25px 0;
+  }
+  .or span {
+    background: $primarycolor;
+    padding: 0 $padding;
+  }
+  
+  .email-login {
+    display: $display;
+    flex-direction: column;
+  }
+  .email-login label {
+    color: rgb(170 166 166);
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 15px $margin20px;
+    margin-top: $border;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: $border;
+    box-sizing: border-box;
+  }
+  
+  .cta-btn {
+    background-color: rgb(69, 69, 185);
+    color: $primarycolor;
+    padding: 18px $margin20px;
+    margin-top: $padding;
+    margin-bottom: $margin20px;
+    width: 100%;
+    border-radius: $padding;
+    border: none;
+  }
+  
+  .forget-pass {
+    text-align: $textcontentitemalign;
+    display: block;
+  }
+  

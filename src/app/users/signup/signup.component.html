@@ -1,0 +1,49 @@
+
+<h1 [style.color]="color">This is signup component dynamic style binding</h1>
+
+<button  class="button" (click)="getuserMoney()">Show Price</button>
+<button  class="redbutton" (click)="getName('Bishal Thapa')" style="margin: 20px 20px auto;">Show name</button>
+
+<input type="text" #pBind [disabled]="disabledbox" [value]="name"/>
+<br>
+<input type="text" #pBinds disabled={{disabledbox}}   value={{name}}/>
+<button  class="bluebutton"  style="margin: 20px auto;" (click)="enablebox()">Enable textbox Property Binding</button>
+<br><br><br>
+<h1 [style.color]="err?'red':'blue'">Conditional color style binding</h1>
+<br>
+
+<br><br><button  class="button" (click)="updatecolorClick()" >Update Color To On button click</button>
+ 
+<br><button  class="button" (click)="updatecolor()" >Update Color To Red</button>
+<p>
+    <ngb-alert [dismissible]="false">
+      <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </ngb-alert>
+  </p>
+  <div class="btn-group btn-group-toggle">
+    <label class="btn-primary" ngbButtonLabel>
+      <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
+    </label>
+    <label class="btn-primary" ngbButtonLabel>
+      <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
+    </label>
+    <label class="btn-primary" ngbButtonLabel>
+      <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
+    </label>
+  </div>
+  <hr>
+
+  <h1> Alert</h1>
+  <p *ngFor="let alert of alerts">
+    <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+  </p>
+
+  <h1>Date in pipe {{date | date:'fullDate'}}</h1>
+  <h1>pipe in angular {{name | uppercase}}</h1>
+  <h1>pipe in angular {{name | lowercase}}</h1>
+  <h1>pipe in angular {{name | titlecase}}</h1>
+  <h2>Break Pipe 2character in angular {{str | slice:2}}</h2>
+  <h1>Currency Pipe in Angular {{currency | currency:'AUD'}}</h1>

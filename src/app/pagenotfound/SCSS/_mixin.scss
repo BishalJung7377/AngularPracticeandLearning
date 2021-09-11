@@ -1,0 +1,13 @@
+@import "./variables";
+
+@mixin  linkfof {
+    color: $backgroundcolor !important;
+    padding: 10px $twentypx;
+    background: $background;
+    margin: $twentypx 0;
+}    
+
+.link_404 {
+    @include linkfof;
+    display: inline-block;
+  }

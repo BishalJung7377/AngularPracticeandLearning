@@ -1,0 +1,27 @@
+<p>This is user list component</p>
+<h1 style="color: red">
+  You are using app-user-list component in main app component
+</h1>
+
+<button class="cybr-btn" (click)="myEvents('This is Click Event')">
+    Click ME<span aria-hidden>_</span>
+  <span aria-hidden class="cybr-btn__glitch">Click ME</span>
+  <span aria-hidden class="cybr-btn__tag">R25</span>
+</button>
+<button class="cybr-btn">
+  Buttons<span aria-hidden>_</span>
+  <span aria-hidden class="cybr-btn__glitch">Buttons_</span>
+  <span aria-hidden class="cybr-btn__tag">R25</span>
+</button>
+<br>
+<input type="text" #redTextbox style="margin: 20px auto;"
+ required (keyup.enter)="myEvents(redTextbox.value)" (mouseleave)="myEvents('Mouse Out')"/> 
+ <input type="text" style="margin: 20px auto;"
+ required (blur)="myEvents('blur event')"/> 
+ <div style="background-color: seagreen; width: 100px; height: 90px;" (mouseover)="myEvents('Mouse in')">
+Mouse Hover Event
+</div>
+
+<div style="background-color: skyblue; width: 100px; height: 90px;" (mouseleave)="myEvents('Mouse Out')">
+    Mouse Hover Event
+    </div>

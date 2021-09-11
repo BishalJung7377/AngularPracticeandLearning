@@ -1,0 +1,23 @@
+@import "./variables";
+
+$backposition: center;
+$fontstyle: bold;
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: $fontsize;
+  color: $fofcolor;
+}
+
+.four_zero_four_bg h3 {
+  font-size: $fontsize;
+}
+
+.contant_box_404 {
+  margin-top: 50px;
+}
